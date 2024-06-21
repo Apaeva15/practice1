@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 80px;
+  padding: 0 20px;
+ background-color: #D5101C;
+
+  @media (max-width: 576px) {
+    height: 60px;
+    padding: 0 10px;
+  }
+
+  .menu-button,
+  .profile-button,
+  .home-button 
+     {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+
+    img {
+      width: 32px;
+      height: 32px;
+      
+      @media (max-width: 576px) {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+
+ 
+
+  .spacer {
+    flex-grow: 1;
+  }
+}
